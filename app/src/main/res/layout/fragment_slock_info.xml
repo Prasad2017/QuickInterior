@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/appbar"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrowback"
+                android:backgroundTint="@color/white"
+                android:visibility="visible"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/back"
+                android:text="Stock"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/StockVL1"
+            android:background="@color/gray_btn_bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:layout_below="@id/appbar">
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/orderName1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="rama"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/orderdate1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="10 july 2018"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/StockVL2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StockVL1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/addLabourindex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/LaboursrNo"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_height="40dp"
+                    android:text="Sr."
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/Labour_name"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_height="40dp"
+                    android:text="Material Name"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/OrderProdName"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_height="40dp"
+                    android:text="Available"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/pending"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Received"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/received"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_height="40dp"
+                    android:text="Pending"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/edit"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_height="40dp"
+                    android:text="Edit"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_overlay"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/StockProductList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StockVL2"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/oderSubmit"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Submit"
+            android:layout_below="@+id/StockProductList"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</ScrollView>

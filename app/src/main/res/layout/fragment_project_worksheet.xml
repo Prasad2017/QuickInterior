@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProjectWorksheet">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/appbar"
+        android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/arrowback"
+        android:tint="@color/white"
+        android:visibility="visible"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/back"
+        android:text="Work Completed"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginStart="5dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"
+        android:layout_margin="10dp"
+        android:layout_below="@id/appbar"/>
+
+</RelativeLayout>

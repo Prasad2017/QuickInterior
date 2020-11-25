@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Home"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addre"
+        android:padding="10dp"
+        sweet:cardElevation="10dp"
+        sweet:cardCornerRadius="10dp"
+        sweet:cardMaxElevation="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/homeL1"
+            android:background="@color/gold"
+            android:padding="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Homeimage"
+                android:background="@drawable/profileimg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                sweet:civ_border_width="1dp"
+                sweet:civ_circle_background_color="@color/black_overlay"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:id="@+id/HomeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint=""/>
+
+                <TextView
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/HomeLoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_marginRight="10dp"
+                    android:hint=""/>
+
+                <TextView
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/HomeJoinDate"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="Joining Date: 1 June 2018"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+
+                    <ImageView
+                        android:id="@+id/viewClientDetails"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/view"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/colorCode"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/addre"
+        android:text="Color Code Selection"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/poppinsregular"
+        android:background="@drawable/updateborder"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/white"
+        android:textSize="17sp"/>
+
+
+</LinearLayout>

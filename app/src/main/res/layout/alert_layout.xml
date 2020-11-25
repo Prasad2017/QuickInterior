@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="45dp"
+    android:layout_marginRight="45dp"
+    android:layout_marginBottom="45dp"
+    android:layout_marginTop="135dp">
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:background="@drawable/rectangle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/alertDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="23 July 2018"/>
+        <TextView
+            android:id="@+id/alertTime"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/alertDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="10.30am"/>
+
+        <TextView
+            android:id="@+id/alertLocation"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/alertDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginRight="5dp"
+            android:text="Pune"/>
+
+        <View
+            android:layout_below="@+id/alertTime"
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="3dp"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:id="@+id/worksheet1"
+            android:layout_below="@+id/view"
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="Start Work"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/worksheetMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Plumbing with 50 labour"
+                android:lines="5"
+                android:maxLines="5"
+                android:gravity="top|left"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/editbox_border"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/worksheet1"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnalert"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+
+            android:text="Ok"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_back"/>
+    </RelativeLayout>
+</RelativeLayout>

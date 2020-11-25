@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/AvailStockL1"
+        android:background="@color/gold"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:id="@+id/constructionName"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/AvailStockL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:weightSum="3"
+        android:layout_below="@+id/AvailStockL1">
+
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@+id/OrdersrNo"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Sr No."
+            android:layout_weight="1"/>
+
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@+id/OrderProdName"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Product Name"
+            android:layout_weight="1"/>
+
+        <TextView android:textSize="16dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@+id/OrderProdStatus"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Available Quantity"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layEdit"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AvailStockL2"
+        layout="@layout/row_available_stock_list"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/availableStockList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AvailStockL2"/>
+
+</RelativeLayout>

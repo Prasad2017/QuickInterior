@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/LaboursrNo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/poppinsregular"
+        android:text="1"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:textSize="13sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/Labour_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Name"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/OrderProdName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Available"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/pending"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Received"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/received"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Pending"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/pencil"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_edit"
+        android:text="Pending"
+        android:layout_weight="1"/>
+
+</LinearLayout>

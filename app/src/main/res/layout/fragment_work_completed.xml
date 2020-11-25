@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.WorkCompleted">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/quatationList"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/spinnerborder"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:digits="0123456789"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/defaultman"
+            android:id="@+id/uploadData"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/editbox_border"
+            android:hint="% Work Percentage"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center"
+            android:id="@+id/percentage"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/poppinsregular"
+            android:background="@drawable/updateborder"
+            android:textColor="@color/white"
+            android:id="@+id/submitWork"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Quick Interior</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sendotp_key">217749A4rjW4ii5b0cf071</string>
+    <string name="enterphonenumber">Enter your phone number</string>
+    <string name="selectcountry">Select country</string>
+    <string name="sending_sms">We\'re sending Quick Interior verification OTP to</string>
+    <string name="inprogress">Verification in\nprogress</string>
+    <string name="verified">Verification successful</string>
+    <string name="failed">Verification failed</string>
+    <string name="entercode">Please enter the code you received</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>Home</item>
+        <item>Attendance</item>
+        <item>Worksheet</item>
+    </string-array>
+
+    <string-array name="elements_home">
+        <item>Babha</item>
+        <item>Gandhi</item>
+        <item>Nehru</item>
+        <item>Tagore</item>
+    </string-array>
+
+    <string-array name="elements_friends">
+        <item>Rachel</item>
+        <item>Ross</item>
+        <item>Monica</item>
+        <item>Phoebe</item>
+        <item>Chandler</item>
+        <item>Joey</item>
+    </string-array>
+
+    <string-array name="elements_notifs">
+        <item>Yellow</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Pink!</item>
+    </string-array>
+</resources>

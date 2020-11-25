@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/Profile"
+            android:icon="@drawable/person"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/Worksheet"
+            android:icon="@drawable/workshit"
+            android:title="Worksheet" />
+
+        <item
+            android:id="@+id/Work_Completed"
+            android:icon="@drawable/workdone"
+            android:title="Work Completed" />
+
+        <item
+            android:icon="@drawable/stock"
+            android:id="@+id/Stock"
+            android:title="Stock"/>
+
+        <item
+            android:id="@+id/Refer_Client"
+            android:icon="@drawable/person"
+            android:title="Refer Client" />
+
+         <item
+            android:id="@+id/Refer_Vendor"
+            android:icon="@drawable/person"
+            android:title="Refer Vendor" />
+
+        <item
+            android:id="@+id/Expense"
+            android:icon="@drawable/h"
+            android:title="Expense" />
+
+        <item
+            android:id="@+id/LabourPayment"
+            android:icon="@drawable/person"
+            android:title="Labour Payment" />
+
+        <item
+            android:id="@+id/Help"
+            android:icon="@drawable/h"
+            android:title="Help" />
+        <item
+            android:id="@+id/Terms"
+            android:icon="@drawable/term"
+            android:title="Terms and Condition"/>
+
+        <item
+            android:id="@+id/Logout"
+            android:icon="@drawable/exit"
+            android:title="Logout"
+            />
+
+    </group>
+
+
+
+</menu>
